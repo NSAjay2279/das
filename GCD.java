@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class GCD {
     static int gcd(int u, int v) {
         int t;
-		/*
-		(4,5),(5,4)
-		(5,4),(1,4)
-		(1,4),(4,1)
-		(4,1),(3,1)
-		(3,1)
-		(2,1)
-		(1,1)(0,1)
-		(0,1)
-		*/
+        /*
+         * (4,5),(5,4)
+         * (5,4),(1,4)
+         * (1,4),(4,1)
+         * (4,1),(3,1)
+         * (3,1)
+         * (2,1)
+         * (1,1)(0,1)
+         * (0,1)
+         */
         while (u > 0) {
             if (u < v) {
                 t = u;
@@ -26,10 +26,10 @@ public class GCD {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNextInt()) { 
+        while (scanner.hasNextInt()) {
             int x = scanner.nextInt();
-			System.out.println(x);
-            if (!scanner.hasNextInt()) break;
+            if (!scanner.hasNextInt())
+                break;
             int y = scanner.nextInt();
             if (x > 0 && y > 0) {
                 System.out.printf("%d %d %d\n", x, y, gcd(x, y));
