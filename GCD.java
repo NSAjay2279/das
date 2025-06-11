@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class GCD {
+	static bux {
+	}
+	
     static int gcd(int u, int v) {
         int t;
         /*
